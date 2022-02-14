@@ -26,6 +26,9 @@ impl State {
                 ctx.cls();
                 // uncomment below to "fix it" and clear fancy console
                 // ctx.set(0, 0, RED, BLACK, to_cp437('E'));
+
+                // try to guess what will happen if you uncomment both lines, above and below :)
+                // ctx.cls();
                 ctx.set_active_console(0);
             },
             GameMode::FANCY => {
