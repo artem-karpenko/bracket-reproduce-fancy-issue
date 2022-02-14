@@ -24,7 +24,7 @@ impl State {
 
                 ctx.set_active_console(1);
                 ctx.cls();
-                // uncomment below to "fix it" and clear fancy console
+                // uncomment below to "fix it" and clear existing symbols on fancy console by drawing a new one (huh?)
                 // ctx.set(0, 0, RED, BLACK, to_cp437('E'));
 
                 // try to guess what will happen if you uncomment both lines, above and below :)
