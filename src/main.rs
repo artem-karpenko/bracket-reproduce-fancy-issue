@@ -16,6 +16,11 @@ impl State {
         }
     }
 
+    /*
+        Press S to enable "SIMPLE" mode ("on" by default) and render "S".
+        Press F to enable "FANCY" mode to render "F".
+        I expect the code below to render either "F" or "S" but not both at the same time.
+    */
     fn render(&self, ctx: &mut BTerm) {
         match self.mode {
             GameMode::SIMPLE => {
