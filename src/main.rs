@@ -19,14 +19,14 @@ impl State {
     fn render(&self, ctx: &mut BTerm) {
         match self.mode {
             GameMode::SIMPLE => {
+                ctx.cls();
+                ctx.set(10, 10, RED, BLACK, to_cp437('S'));
+
                 ctx.set_active_console(1);
                 ctx.cls();
                 // uncomment below to "fix it" and clear fancy console
                 // ctx.set(0, 0, RED, BLACK, to_cp437('E'));
                 ctx.set_active_console(0);
-
-                ctx.cls();
-                ctx.set(10, 10, RED, BLACK, to_cp437('S'));
             },
             GameMode::FANCY => {
                 ctx.cls();
