@@ -30,7 +30,7 @@ impl State {
                 ctx.set_active_console(1);
                 ctx.cls();
                 // uncomment below to "fix it" and "clear" fancy console by drawing a space (any symbol will do) somewhere
-                ctx.set(0, 0, RED, BLACK, to_cp437(' '));
+                // ctx.set(0, 0, RED, BLACK, to_cp437(' '));
 
                 // try to guess what will happen if you uncomment both lines, above and below :)
                 // ctx.cls();
